@@ -7,6 +7,6 @@ class CategoryData {
       title: 'الطلب السريع',
     ),
     CategoryModel(image: 'assets/images/Group 29459.png', title: 'المطاعم'),
-    CategoryModel(image: 'assets/images/Group 29458.png', title: 'عروض'),
+    CategoryModel(image: 'assets/images/Group 29460.png', title: 'سوبر ماركت '),
   ];
 }

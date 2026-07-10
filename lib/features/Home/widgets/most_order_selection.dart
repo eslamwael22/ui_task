@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ui_screen/features/Home/data/most_order_data.dart';
 import 'package:ui_screen/features/Home/widgets/most_order_item.dart';
 
-class CategorySection extends StatelessWidget {
-  const CategorySection({super.key});
+class MostOrderSelection extends StatelessWidget {
+  const MostOrderSelection({super.key});
 
   @override
   Widget build(BuildContext context) {
