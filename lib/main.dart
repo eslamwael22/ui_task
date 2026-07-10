@@ -18,7 +18,7 @@ class Ui extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          locale: const Locale('ar'),
+          locale: const Locale('en'),
           title: 'Ui Task ',
           debugShowCheckedModeBanner: false,
           localizationsDelegates: const [
@@ -30,7 +30,7 @@ class Ui extends StatelessWidget {
           supportedLocales: S.delegate.supportedLocales,
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
           builder: (context, child) =>
-              Directionality(textDirection: TextDirection.rtl, child: child!),
+              Directionality(textDirection: TextDirection.ltr, child: child!),
           home: const HomeView(),
         );
       },
