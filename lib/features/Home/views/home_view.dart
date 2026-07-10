@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_screen/core/widgets/section_header.dart';
 import 'package:ui_screen/features/Home/widgets/cart_widget.dart';
 import 'package:ui_screen/features/Home/widgets/category_section.dart';
 import 'package:ui_screen/features/Home/widgets/home_slider.dart';
@@ -61,31 +62,22 @@ class HomeView extends StatelessWidget {
           SizedBox(height: 5.h),
           Padding(
             padding: EdgeInsets.only(left: 270.w),
-            child: Text(
-              'الاقسام',
-              style: GoogleFonts.cairo(
-                fontSize: 20.sp,
-                fontWeight: FontWeight.w400,
-                color: Colors.black,
-              ),
-            ),
+            child: SectionHeader(title: 'الاقسام', showSeeAll: false),
           ),
           SizedBox(height: 10.h),
           const CategorySection(),
           SizedBox(height: 10.h),
           Padding(
             padding: EdgeInsets.only(left: 240.w),
-            child: Text(
-              'اعاده الطلب',
-              style: GoogleFonts.cairo(
-                fontSize: 20.sp,
-                fontWeight: FontWeight.w400,
-                color: Colors.black,
-              ),
-            ),
+            child: SectionHeader(title: 'اعاده الطلب', showSeeAll: false),
           ),
           SizedBox(height: 10.h),
           const ReorderSection(),
+          SizedBox(height: 10.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 4.w),
+            child: SectionHeader(title: 'الأكثر طلباً', showSeeAll: true),
+          ),
         ],
       ),
     );
