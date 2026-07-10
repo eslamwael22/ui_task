@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_screen/core/constants/app_colors.dart';
 
-class SearchBar extends StatelessWidget {
-  const SearchBar({super.key});
+class HomeSearchBar extends StatelessWidget {
+  const HomeSearchBar({super.key});
 
   @override
   Widget build(BuildContext context) {
