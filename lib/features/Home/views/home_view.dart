@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_screen/features/Home/widgets/cart_widget.dart';
 import 'package:ui_screen/features/Home/widgets/category_section.dart';
 import 'package:ui_screen/features/Home/widgets/home_slider.dart';
+import 'package:ui_screen/features/Home/widgets/reorder_section.dart';
 import 'package:ui_screen/features/Home/widgets/search_bar_widget.dart';
 
 class HomeView extends StatelessWidget {
@@ -83,6 +84,8 @@ class HomeView extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 10.h),
+          const ReorderSection(),
         ],
       ),
     );
