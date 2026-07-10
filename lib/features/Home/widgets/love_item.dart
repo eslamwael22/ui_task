@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_screen/generated/l10n.dart';
 import '../models/love_model.dart';
 
 class LoveItem extends StatelessWidget {
@@ -10,9 +11,9 @@ class LoveItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
-        width: 180.w,
+        width: 200.w,
 
         decoration: BoxDecoration(
           color: Colors.white,
@@ -55,7 +56,7 @@ class LoveItem extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(10.w),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     item.title,
@@ -68,10 +69,10 @@ class LoveItem extends StatelessWidget {
                   SizedBox(height: 4.h),
 
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(
-                        '${item.newPrice} ج',
+                        '${item.newPrice} ${S.of(context).currencySymbol}',
                         style: GoogleFonts.cairo(
                           color: Colors.orange,
                           fontSize: 18.sp,
@@ -82,7 +83,7 @@ class LoveItem extends StatelessWidget {
                       SizedBox(width: 8.w),
 
                       Text(
-                        '${item.oldPrice} ج',
+                        '${item.oldPrice} ${S.of(context).currencySymbol}',
                         style: GoogleFonts.cairo(
                           color: Colors.grey,
                           decoration: TextDecoration.lineThrough,
@@ -105,14 +106,15 @@ class LoveItem extends StatelessWidget {
                           fit: BoxFit.cover,
                         ),
                       ),
-
-                      const Spacer(),
-
-                      Text(
-                        item.restaurantName,
-                        style: GoogleFonts.cairo(
-                          fontSize: 18.sp,
-                          fontWeight: FontWeight.w500,
+                      SizedBox(width: 5.w),
+                      Expanded(
+                        child: Text(
+                          item.restaurantName,
+                          overflow: TextOverflow.ellipsis,
+                          style: GoogleFonts.cairo(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ),
                     ],

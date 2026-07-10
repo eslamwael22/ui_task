@@ -29,6 +29,8 @@ class Ui extends StatelessWidget {
           ],
           supportedLocales: S.delegate.supportedLocales,
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+          builder: (context, child) =>
+              Directionality(textDirection: TextDirection.rtl, child: child!),
           home: const HomeView(),
         );
       },

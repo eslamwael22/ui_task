@@ -21,5 +21,49 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "SearchTitle": MessageLookupByLibrary.simpleMessage(
+            "Search About Meal Or Restaurant"),
+        "appBarTitle":
+            MessageLookupByLibrary.simpleMessage("Tanta , Al-Estad Area"),
+        "categoriesTitle": MessageLookupByLibrary.simpleMessage("Categories"),
+        "category1Title": MessageLookupByLibrary.simpleMessage("Quick Order"),
+        "category2Title": MessageLookupByLibrary.simpleMessage("Restaurants"),
+        "category3Title": MessageLookupByLibrary.simpleMessage("Supermarket"),
+        "changeButton": MessageLookupByLibrary.simpleMessage("Change"),
+        "currencySymbol": MessageLookupByLibrary.simpleMessage("EGP"),
+        "likeTitle": MessageLookupByLibrary.simpleMessage("May Be Like"),
+        "love1RestaurantName":
+            MessageLookupByLibrary.simpleMessage("Indian Restaurant"),
+        "love1Title": MessageLookupByLibrary.simpleMessage("Akila Meal"),
+        "love2RestaurantName":
+            MessageLookupByLibrary.simpleMessage("Indian Restaurant"),
+        "love2Title": MessageLookupByLibrary.simpleMessage("Akila Meal"),
+        "mostOrder1DeliveryCost":
+            MessageLookupByLibrary.simpleMessage("15 EGP"),
+        "mostOrder1Description":
+            MessageLookupByLibrary.simpleMessage("Burger • Fried Chicken"),
+        "mostOrder1Time": MessageLookupByLibrary.simpleMessage("45 min"),
+        "mostOrder1Title": MessageLookupByLibrary.simpleMessage("Cook Door"),
+        "mostOrder2DeliveryCost":
+            MessageLookupByLibrary.simpleMessage("20 EGP"),
+        "mostOrder2Description":
+            MessageLookupByLibrary.simpleMessage("Chicken • Sandwiches"),
+        "mostOrder2Time": MessageLookupByLibrary.simpleMessage("30 min"),
+        "mostOrder2Title": MessageLookupByLibrary.simpleMessage("Spectra Cafe"),
+        "mostOrderTitle": MessageLookupByLibrary.simpleMessage("Most Order"),
+        "reorder1Description":
+            MessageLookupByLibrary.simpleMessage("Family Meal"),
+        "reorder1Title":
+            MessageLookupByLibrary.simpleMessage("Indian Restaurant"),
+        "reorder2Description":
+            MessageLookupByLibrary.simpleMessage("Al-Salam Store"),
+        "reorder2Title": MessageLookupByLibrary.simpleMessage("Quick Order"),
+        "reorder3Description":
+            MessageLookupByLibrary.simpleMessage("Dinner Meal"),
+        "reorder3Title":
+            MessageLookupByLibrary.simpleMessage("Syrian Restaurant"),
+        "reorderButton": MessageLookupByLibrary.simpleMessage("Reorder"),
+        "reorderTitle": MessageLookupByLibrary.simpleMessage("Reorder")
+      };
 }

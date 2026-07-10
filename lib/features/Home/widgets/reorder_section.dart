@@ -12,9 +12,9 @@ class ReorderSection extends StatelessWidget {
       height: 120.h,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: ReorderData.items.length,
+        itemCount: ReorderData.getItems(context).length,
         itemBuilder: (context, index) {
-          return ReorderItem(reorder: ReorderData.items[index]);
+          return ReorderItem(reorder: ReorderData.getItems(context)[index]);
         },
       ),
     );

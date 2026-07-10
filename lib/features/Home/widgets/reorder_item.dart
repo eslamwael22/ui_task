@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_screen/features/Home/models/reorder_model.dart';
+import 'package:ui_screen/generated/l10n.dart';
 
 class ReorderItem extends StatelessWidget {
   final ReorderModel reorder;
@@ -42,8 +43,10 @@ class ReorderItem extends StatelessWidget {
                       Text(
                         reorder.title,
                         textAlign: TextAlign.right,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.cairo(
-                          fontSize: 18.sp,
+                          fontSize: 16.sp,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -53,6 +56,8 @@ class ReorderItem extends StatelessWidget {
                       Text(
                         reorder.description,
                         textAlign: TextAlign.right,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.cairo(
                           color: Colors.grey,
                           fontSize: 15.sp,
@@ -73,7 +78,7 @@ class ReorderItem extends StatelessWidget {
                   Icon(Icons.refresh_outlined, color: Colors.teal, size: 22.sp),
                   SizedBox(width: 5.w),
                   Text(
-                    'إعادة الطلب',
+                    S.of(context).reorderButton,
                     style: GoogleFonts.cairo(
                       color: Colors.teal,
                       fontSize: 18.sp,

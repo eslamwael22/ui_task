@@ -9,12 +9,12 @@ class LoveSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 270.h,
+      height: 290.h,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: MayLoveData.items.length,
+        itemCount: MayLoveData.getItems(context).length,
         itemBuilder: (context, index) {
-          return LoveItem(item: MayLoveData.items[index]);
+          return LoveItem(item: MayLoveData.getItems(context)[index]);
         },
       ),
     );

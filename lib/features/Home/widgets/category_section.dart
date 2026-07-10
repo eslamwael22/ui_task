@@ -14,9 +14,9 @@ class CategorySection extends StatelessWidget {
       child: ListView.builder(
         padding: EdgeInsetsDirectional.symmetric(horizontal: 10.w),
         scrollDirection: Axis.horizontal,
-        itemCount: CategoryData.categories.length,
+        itemCount: CategoryData.getCategories(context).length,
         itemBuilder: (context, index) {
-          return CategoryItem(category: CategoryData.categories[index]);
+          return CategoryItem(category: CategoryData.getCategories(context)[index]);
         },
       ),
     );

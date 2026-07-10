@@ -1,1 +1,38 @@
-{}
+{
+    "appBarTitle": "Tanta , Al-Estad Area",
+    "SearchTitle": "Search About Meal Or Restaurant",
+    "changeButton": "Change",
+    "categoriesTitle": "Categories",
+    "reorderTitle": "Reorder",
+    "mostOrderTitle": "Most Order",
+    "likeTitle": "May Be Like",
+
+    "currencySymbol": "EGP",
+
+    "reorderButton": "Reorder",
+
+    "category1Title": "Quick Order",
+    "category2Title": "Restaurants",
+    "category3Title": "Supermarket",
+
+    "reorder1Title": "Indian Restaurant",
+    "reorder1Description": "Family Meal",
+    "reorder2Title": "Quick Order",
+    "reorder2Description": "Al-Salam Store",
+    "reorder3Title": "Syrian Restaurant",
+    "reorder3Description": "Dinner Meal",
+
+    "mostOrder1Title": "Cook Door",
+    "mostOrder1Description": "Burger • Fried Chicken",
+    "mostOrder1DeliveryCost": "15 EGP",
+    "mostOrder1Time": "45 min",
+    "mostOrder2Title": "Spectra Cafe",
+    "mostOrder2Description": "Chicken • Sandwiches",
+    "mostOrder2DeliveryCost": "20 EGP",
+    "mostOrder2Time": "30 min",
+
+    "love1Title": "Akila Meal",
+    "love1RestaurantName": "Indian Restaurant",
+    "love2Title": "Akila Meal",
+    "love2RestaurantName": "Indian Restaurant"
+}

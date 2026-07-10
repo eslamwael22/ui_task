@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_screen/core/constants/app_colors.dart';
+import 'package:ui_screen/generated/l10n.dart';
 
 class HomeSearchBar extends StatelessWidget {
   const HomeSearchBar({super.key});
@@ -19,12 +20,15 @@ class HomeSearchBar extends StatelessWidget {
           SizedBox(width: 8.w),
           const Icon(Icons.search),
           SizedBox(width: 8.w),
-          Text(
-            'ابحث عن وجبة او مطعم',
-            style: GoogleFonts.cairo(
-              color: Colors.black,
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w600,
+          Expanded(
+            child: Text(
+              S.of(context).SearchTitle,
+              overflow: TextOverflow.ellipsis,
+              style: GoogleFonts.cairo(
+                color: Colors.black,
+                fontSize: 16.sp,
+                fontWeight: FontWeight.w600,
+              ),
             ),
           ),
         ],

@@ -12,9 +12,9 @@ class MostOrderSelection extends StatelessWidget {
       height: 250.h,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: MostOrderData.items.length,
+        itemCount: MostOrderData.getItems(context).length,
         itemBuilder: (context, index) {
-          return MostOrderItem(item: MostOrderData.items[index]);
+          return MostOrderItem(item: MostOrderData.getItems(context)[index]);
         },
       ),
     );

@@ -1,1 +1,38 @@
-{}
+{
+    "appBarTitle": "طنطا , منطقة الاستاد",
+    "SearchTitle": "ابحث عن وجبة او مطعم",
+    "changeButton": "تغيير",
+    "categoriesTitle": "الأقسام",
+    "reorderTitle": "إعادة الطلب",
+    "mostOrderTitle": "الأكثر طلباً",
+    "likeTitle": "قد يعجبك",
+
+    "currencySymbol": "ج",
+
+    "reorderButton": "إعادة الطلب",
+
+    "category1Title": "الطلب السريع",
+    "category2Title": "المطاعم",
+    "category3Title": "سوبر ماركت",
+
+    "reorder1Title": "مطعم هندي",
+    "reorder1Description": "وجبة العائلة",
+    "reorder2Title": "طلب سريع",
+    "reorder2Description": "متجر السلام",
+    "reorder3Title": "مطعم سوري",
+    "reorder3Description": "وجبة العشاء",
+
+    "mostOrder1Title": "كوك دور",
+    "mostOrder1Description": "برجر • فرايد تشيكن",
+    "mostOrder1DeliveryCost": "15 ج",
+    "mostOrder1Time": "45 دقيقة",
+    "mostOrder2Title": "سبكترا كافيه",
+    "mostOrder2Description": "فراخ • سندوتشات",
+    "mostOrder2DeliveryCost": "20 ج",
+    "mostOrder2Time": "30 دقيقة",
+
+    "love1Title": "وجبة الاكيلة",
+    "love1RestaurantName": "مطعم هندي",
+    "love2Title": "وجبة الاكيلة",
+    "love2RestaurantName": "مطعم هندي"
+}

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_screen/core/constants/app_colors.dart';
+import 'package:ui_screen/generated/l10n.dart';
 
 class CartWidget extends StatelessWidget {
   final int totalItems;
@@ -15,7 +16,7 @@ class CartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 110.w,
+      width: 130.w,
       height: 45.h,
       padding: EdgeInsets.symmetric(horizontal: 8.w),
       decoration: BoxDecoration(
@@ -41,7 +42,7 @@ class CartWidget extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: Text(
-                    '50',
+                    '$totalItems',
                     style: TextStyle(
                       fontSize: 10.sp,
                       fontWeight: FontWeight.bold,
@@ -62,12 +63,15 @@ class CartWidget extends StatelessWidget {
 
           SizedBox(width: 6.w),
 
-          Text(
-            '300 ج',
-            style: GoogleFonts.cairo(
-              color: Colors.black,
-              fontSize: 15.sp,
-              fontWeight: FontWeight.w600,
+          Expanded(
+            child: Text(
+              '${totalPrice.toInt()} ${S.of(context).currencySymbol}',
+              overflow: TextOverflow.ellipsis,
+              style: GoogleFonts.cairo(
+                color: Colors.black,
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w600,
+              ),
             ),
           ),
         ],

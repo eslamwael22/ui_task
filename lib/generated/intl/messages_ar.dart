@@ -21,5 +21,45 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "SearchTitle":
+            MessageLookupByLibrary.simpleMessage("ابحث عن وجبة او مطعم"),
+        "appBarTitle":
+            MessageLookupByLibrary.simpleMessage("طنطا , منطقة الاستاد"),
+        "categoriesTitle": MessageLookupByLibrary.simpleMessage("الأقسام"),
+        "category1Title": MessageLookupByLibrary.simpleMessage("الطلب السريع"),
+        "category2Title": MessageLookupByLibrary.simpleMessage("المطاعم"),
+        "category3Title": MessageLookupByLibrary.simpleMessage("سوبر ماركت"),
+        "changeButton": MessageLookupByLibrary.simpleMessage("تغيير"),
+        "currencySymbol": MessageLookupByLibrary.simpleMessage("ج"),
+        "likeTitle": MessageLookupByLibrary.simpleMessage("قد يعجبك"),
+        "love1RestaurantName":
+            MessageLookupByLibrary.simpleMessage("مطعم هندي"),
+        "love1Title": MessageLookupByLibrary.simpleMessage("وجبة الاكيلة"),
+        "love2RestaurantName":
+            MessageLookupByLibrary.simpleMessage("مطعم هندي"),
+        "love2Title": MessageLookupByLibrary.simpleMessage("وجبة الاكيلة"),
+        "mostOrder1DeliveryCost": MessageLookupByLibrary.simpleMessage("15 ج"),
+        "mostOrder1Description":
+            MessageLookupByLibrary.simpleMessage("برجر • فرايد تشيكن"),
+        "mostOrder1Time": MessageLookupByLibrary.simpleMessage("45 دقيقة"),
+        "mostOrder1Title": MessageLookupByLibrary.simpleMessage("كوك دور"),
+        "mostOrder2DeliveryCost": MessageLookupByLibrary.simpleMessage("20 ج"),
+        "mostOrder2Description":
+            MessageLookupByLibrary.simpleMessage("فراخ • سندوتشات"),
+        "mostOrder2Time": MessageLookupByLibrary.simpleMessage("30 دقيقة"),
+        "mostOrder2Title": MessageLookupByLibrary.simpleMessage("سبكترا كافيه"),
+        "mostOrderTitle": MessageLookupByLibrary.simpleMessage("الأكثر طلباً"),
+        "reorder1Description":
+            MessageLookupByLibrary.simpleMessage("وجبة العائلة"),
+        "reorder1Title": MessageLookupByLibrary.simpleMessage("مطعم هندي"),
+        "reorder2Description":
+            MessageLookupByLibrary.simpleMessage("متجر السلام"),
+        "reorder2Title": MessageLookupByLibrary.simpleMessage("طلب سريع"),
+        "reorder3Description":
+            MessageLookupByLibrary.simpleMessage("وجبة العشاء"),
+        "reorder3Title": MessageLookupByLibrary.simpleMessage("مطعم سوري"),
+        "reorderButton": MessageLookupByLibrary.simpleMessage("إعادة الطلب"),
+        "reorderTitle": MessageLookupByLibrary.simpleMessage("إعادة الطلب")
+      };
 }

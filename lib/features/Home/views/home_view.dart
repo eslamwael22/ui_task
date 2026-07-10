@@ -9,15 +9,19 @@ import 'package:ui_screen/features/Home/widgets/love_section.dart';
 import 'package:ui_screen/features/Home/widgets/most_order_selection.dart';
 import 'package:ui_screen/features/Home/widgets/reorder_section.dart';
 import 'package:ui_screen/features/Home/widgets/search_bar_widget.dart';
+import 'package:ui_screen/generated/l10n.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
+    print(Localizations.localeOf(context));
+
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 80,
+        scrolledUnderElevation: 0,
+        toolbarHeight: 85,
         backgroundColor: Colors.white,
         elevation: 0,
         title: Row(
@@ -25,7 +29,7 @@ class HomeView extends StatelessWidget {
             const Icon(Icons.location_on_outlined),
 
             Text(
-              'طنطا , منطقة الاستاد',
+              S.of(context).appBarTitle,
               style: GoogleFonts.cairo(
                 color: Colors.black,
                 fontSize: 17.sp,
@@ -36,7 +40,7 @@ class HomeView extends StatelessWidget {
             const Spacer(),
 
             Text(
-              'تغيير',
+              S.of(context).changeButton,
               style: GoogleFonts.cairo(
                 color: Colors.black,
                 fontSize: 16.sp,
@@ -72,7 +76,10 @@ class HomeView extends StatelessWidget {
             SizedBox(height: 20.h),
 
             /// Categories
-            const SectionHeader(title: 'الأقسام', showSeeAll: false),
+            SectionHeader(
+              title: S.of(context).categoriesTitle,
+              showSeeAll: false,
+            ),
 
             SizedBox(height: 10.h),
 
@@ -81,19 +88,21 @@ class HomeView extends StatelessWidget {
             SizedBox(height: 20.h),
 
             /// Reorder
-            const SectionHeader(title: 'إعادة الطلب', showSeeAll: false),
+            SectionHeader(title: S.of(context).reorderTitle, showSeeAll: false),
             SizedBox(height: 10.h),
             const ReorderSection(),
             SizedBox(height: 20.h),
-            const SectionHeader(title: 'الأكثر طلباً', showSeeAll: true),
+            SectionHeader(
+              title: S.of(context).mostOrderTitle,
+              showSeeAll: true,
+            ),
             SizedBox(height: 10.h),
             const MostOrderSelection(),
             SizedBox(height: 20.h),
-            const SectionHeader(title: 'قد يعجبك', showSeeAll: false),
+            SectionHeader(title: S.of(context).likeTitle, showSeeAll: false),
             SizedBox(height: 10.h),
             LoveSection(),
-
-            SizedBox(height: 20.h),
+            SizedBox(height: 100.h),
           ],
         ),
       ),
