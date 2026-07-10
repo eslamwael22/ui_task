@@ -1,17 +1,64 @@
-# ui_screen
+# 🍔 Food Delivery UI
 
-A new Flutter project.
+A modern Flutter Food Delivery UI built as a practice task.
 
-## Getting Started
+<p align="center">
+  <img src="assets/images/poster.png" width="900"/>
+</p>
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🌍 Arabic & English Localization
+- 🎞 Auto Banner Slider with Swipe
+- 🔍 Custom Search Bar
+- 📂 Categories Section
+- 🔄 Reorder Section
+- 🔥 Most Ordered Restaurants
+- ❤️ You May Like Section
+- 📱 Responsive UI using flutter_screenutil
+- 🧩 Clean Widget Separation
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Built With
+
+- Flutter
+- Dart
+- flutter_screenutil
+- carousel_slider
+- flutter_localizations
+- google_fonts
+
+## 📂 Project Structure
+
+```text
+lib/
+│
+├── core/
+│
+├── features/
+│   └── Home/
+│       ├── data/
+│       ├── models/
+│       ├── views/
+│       └── widgets/
+│
+├── generated/
+└── main.dart
+```
+
+
+
+## 📦 Packages
+
+```yaml
+carousel_slider
+flutter_screenutil
+flutter_localizations
+google_fonts
+```
+
+## 👨‍💻 Developer
+
+**Your Name**
+
+GitHub: https://github.com/yourusername
